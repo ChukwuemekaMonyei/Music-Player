@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/92be19d3b4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+         <nav>
+           <div class="circle">
+            <i class="fa-solid fa-angles-left"></i>
+           </div>
+           <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+         </nav>
+         <img src="media/Ruger-Asiwaju.webp" class="song-img">
+         <h1>Asiwaju</h1>
+         <p>Ruger</p>
+
+         <audio  id="song">
+           <source src="media/Ruger-Asiwaju.mp3" type="audio/mpeg">
+         </audio>
+         <input type="range" name="" value="0" id="progress">
+
+         <div class="controls">
+           <div class="">
+             <i class="fa-solid fa-backward"></i>
+           </div>
+           <div onclick="playPause()">
+             <i class="fa-solid fa-play" id="ctrlIcon"></i>
+           </div>
+          <div>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+         </div>
+
+      </div>
+    </div>
+
+
+   <script src="music.js" charset="utf-8"></script>
+  </body>
+</html>
